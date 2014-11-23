@@ -55,7 +55,23 @@ class DecoderYmlToXml
 	
 	protected function createElement(SimpleXMLElement $element)
 	{
-		return ElementDecoder::create()->createByElement($element);
+	    $type = '';
+	    foreach($element->attributes() as $k => $v) {
+		if($k == 'type')
+		    $type = $v;
+	    }
+
+	    switch($type) {
+		case 'vendor.model':
+		    return ElementDecoder::create()->createByElement($element);
+		    break;
+		case 'book':
+		    throw new Exception('unsupported logic!');
+		    break;
+		default:
+		    return ElementDecoder::create()->createByElement($element);    
+		    break;
+	    }
 	}
 	
 	protected function createGroup(SimpleXMLElement $element,array $dataGroup)

@@ -7,7 +7,26 @@
 
 class ElementDecoder
 {
-
+/*
+<url>http://best.seller.ru/product_page.asp?pid=12348</url>
+    <price>600</price>
+    <currencyId>USD</currencyId>
+    <categoryId>6</categoryId>
+    <picture>http://best.seller.ru/img/device12345.jpg</picture>
+    <store>false</store>
+    <pickup>true</pickup>
+    <delivery>false</delivery>
+    <local_delivery_cost>300</local_delivery_cost>
+    <name>Наручные часы Casio A1234567B</name>
+    <vendor>Casio</vendor>
+    <vendorCode>A1234567B</vendorCode>
+    <description>Изящные наручные часы.</description>
+    <sales_notes>Необходима предоплата.</sales_notes>
+    <manufacturer_warranty>P2Y</manufacturer_warranty>
+    <country_of_origin>Япония</country_of_origin>
+    <barcode>0123456789012</barcode>
+    <cpa>1</cpa> 
+ */
 	/**
 	 * @return ElementDecoder
 	 */
